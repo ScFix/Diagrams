@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Diagrams/v15
+/packages
+/Diagrams/obj/x86/Debug
+/Diagrams/bin/Debug

@@ -25,12 +25,7 @@ namespace DotNetDiagrams
     {
         static void Main(string[] args)
         {
-            const string solutionName = "DotNetDiagrams";
-            const string solutionExtension = ".sln";
-            const string solutionFileName = solutionName + solutionExtension;
-            const string rootPath = @"C:\Workspace\";
-            const string solutionPath = rootPath + solutionName + @"\" + solutionFileName;
-
+            string solutionPath = args[0];
             var workspace = MSBuildWorkspace.Create();
             var diagramGenerator = new DiagramGenerator(solutionPath, workspace);
             diagramGenerator.ProcessSolution().Wait();
